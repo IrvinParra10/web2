@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta Especial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Un mensaje especial para ti...</h1>
+        <p>Desde que te conocí, todo en mi vida tiene más sentido.
+            Tu sonrisa ilumina mis días y tu presencia los llena de felicidad, en tampoco tiempo lograste volverme loco,
+            gustarme tanto, sigo preguntandome el "¿como lo hiciste?". Te haré muy feliz si tu me lo permites, quisiera
+            pasar unos momentos agradables contigo
+        </p>
+        <h2>¿Quisieras ser mi novia?</h2>
+        <div class="buttons">
+            <button class="yes" onclick="showResult('yes')">Si</button>
+            <button class="no" onclick="showResult('no')">No</button>
+        </div>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        function showResult(answer) {
+            const result = document.getElementById('result');
+            if (answer === 'yes'){
+            result.innerHTML = "¡Me haces la persona más feliz del mundo! No te fallaré. ❤️";
+
+            result.style.color = '#4caf50';} 
+
+            else{
+                result.innerHTML = 'Está bien, lo seguiré intentando. 💔';
+                result.style.color = '#f44336';
+            }
+
+            result.style.display = 'block'; 
+        }
+    </script>
+</body>
+
+</html>
